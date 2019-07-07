@@ -28,7 +28,7 @@
 # RPLidar Hector SLAM
 Using Hector SLAM without odometry data on a ROS system with the RPLidar A1.
   1. In your terminal, run ```cd ~/catkin_ws/src``` 
-  2. To clone this repository into your src folder of catkin workspace, run ```git clone https://github.com/ArghyaChatterjee/Hector-SLAM-in-ROS-without-odometry-data-in-Nvidia-Jetson-and-Raspberry-pi.git```
+  2. To clone this repository into your src folder of catkin workspace, run ```git clone https://github.com/ArghyaChatterjee/Rover-less-Hector-SLAM-in-ROS-using-Nvidia-Jetson-or-Raspberry-pi.git```
   3. Run ```cd ..``` to get back to the mother folder which is catkin_ws in your terminal. 
   4. Now run ```catkin_make``` to compile your catkin workspace.
   5. Again run ```source /devel/setup.bash``` to source the devel folder of your catkin workspace.
@@ -46,3 +46,8 @@ the second line is replaced with ```<node pkg="tf" type="static_transform_publis
   2. The third line is replaced with ```<arg name="base_frame" default="base_link"/>```
   3. The fourth line is replaced with```<arg name="odom_frame" default="base_link"/>```
   4. In catkin_ws/src/rplidar_hector_slam/hector_slam/hector_slam_launch/launch/tutorial.launch  the third line is replaced with```<param name="/use_sim_time" value="false"/>```
+  
+# Gratitude
+  I would like to acknowledge the contribution of 2 website which helped me a lot during this tutorial.
+  1. https://github.com/tu-darmstadt-ros-pkg/hector_slam
+  2. https://github.com/NickL77/RPLidar_Hector_SLAM
