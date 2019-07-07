@@ -41,13 +41,13 @@ Using Hector SLAM without odometry data on a ROS system with the RPLidar A1.
   
 
 
-Note: What is changed from the original hector slam repository is described below:
+## Note: What is changed from the original hector slam repository is described below:
 
-  1. In catkin_ws/src/rplidar_hector_slam/hector_slam/hector_mapping/launch/mapping_default.launch 
+  1. In catkin_ws/src/rplidar_hector_slam/hector_slam/hector_mapping/launch/mapping_default_ar.launch, 
 the second line is replaced with ```<node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 base_link laser 100" />```
   2. The third line is replaced with ```<arg name="base_frame" default="base_link"/>```
   3. The fourth line is replaced with```<arg name="odom_frame" default="base_link"/>```
-  4. In catkin_ws/src/rplidar_hector_slam/hector_slam/hector_slam_launch/launch/tutorial.launch  the third line is replaced with```<param name="/use_sim_time" value="false"/>```
+  4. In catkin_ws/src/rplidar_hector_slam/hector_slam/hector_slam_launch/launch/tutorial_ar.launch,  the third line is replaced with```<param name="/use_sim_time" value="false"/>```
   
 # Gratitude
   I would like to acknowledge the contribution of 2 website which helped me a lot during this tutorial.
