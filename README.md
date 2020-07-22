@@ -30,8 +30,6 @@ Using Hector SLAM without odometry data on a ROS system with the RPLidar A1.
   1. In your terminal, run ```cd ~/catkin_ws/src``` 
   2. To clone this repository into your src folder of catkin workspace, run ```git clone https://github.com/ArghyaChatterjee/Rover-less-Hector-SLAM-in-ROS-using-Nvidia-Jetson-or-Raspberry-pi.git```
   3. Run ```cd ..``` to get back to the mother folder which is catkin_ws in your terminal. 
-  4. Manually go to the src folder of catkin_ws directory and go inside the folder"Rover-less-Hector-SLAM-in-ROS-using-Nvidia-Jetson-or-Raspberry-pi". You will find a zip file and 2 readable files. 
-  5. Unzip the zip file, copy the folder (hector_slam) from the mother folder into the src folder. Then delete the mother folder.
   4. Now in the same terminal previously opened, run ```catkin_make``` to compile your catkin workspace.
   5. Again run ```source /devel/setup.bash``` to source the devel folder of your catkin workspace.
   6. Then in a new terminal, run ```roscore``` to start ros master node.
